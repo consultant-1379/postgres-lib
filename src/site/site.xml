@@ -1,0 +1,78 @@
+<project xmlns="http://maven.apache.org/DECORATION/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd">
+  <bannerLeft>
+    <name>PGLIB SDK</name>
+    <href>http://www.ericsson.com/</href>
+  </bannerLeft>
+    
+  <bannerRight>
+    <src>images/logo.png</src>
+      <href>http://www.ericsson.com/</href>
+  </bannerRight>
+    
+  <poweredBy>
+    <logo name="Ericsson" href="http://www.ericsson.com/" img="images/logo.png" />
+  </poweredBy>
+    
+  <body>
+    <head>
+      <!--
+      The below is a temporary fix for enabling syntax highlighting
+      for Maven Sites written in Markdown.
+      -->
+      <script type="text/javascript">
+          $(document).ready(function () {
+            //$("div.source pre").addClass("prettyprint linenums");
+            $("div.source pre").addClass("prettyprint");
+                prettyPrint();
+            });
+      </script>
+    </head>
+
+    <links>
+      <item name="Gerrit Repo" href="https://gerrit.ericsson.se/#/admin/projects/OSS/ENM-Parent/SQ-Gate/com.ericsson.oss.itpf.datalayer/postgres-lib"/>
+      <item name="Master" href="https://gerrit.ericsson.se/plugins/gitiles/OSS/ENM-Parent/SQ-Gate/com.ericsson.oss.itpf.datalayer/postgres-lib/+/refs/heads/master"/>
+    </links>
+
+    <menu name="Overview">
+      <item name="Home" href="index.html"/>
+    </menu>
+
+    <menu name="Developer Section">
+      <item name="Setup Developer Environment" href="developer/setupenv.html"/>
+      <item name="Making Code Changes" href="developer/branch.html"/>
+      <item name="Testing SDK Changes Locally" href="developer/sdktest.html"/>
+    </menu>
+
+    <menu name="DocumentDB Admin Utility">
+      <item name="Overview" href="adminutil/overview.html">
+        <item name="PostgreSQL Version" href="adminutil/version.html"/>
+        <item name="PostgreSQL Uptime" href="adminutil/uptime.html"/>
+        <item name="Databases Size" href="adminutil/databasesize.html"/>
+        <item name="Filesystem Usage" href="adminutil/filesystemusage.html"/>
+        <item name="Cluster Overview" href="adminutil/clusteroverview.html"/>
+      </item>
+    </menu>
+
+    <menu name="PGLib">
+      <item name="Overview" href="pglib/overview.html">
+        <item name="ENM Kube Session" href="pglib/kubesession.html"/>
+        <item name="PostgreSQL session/client" href="pglib/postgresclients.html"/>
+      </item>
+    </menu>
+
+  </body>
+  <skin>
+    <groupId>com.ericsson.nms.pres.client</groupId>
+    <artifactId>EricssonSkin</artifactId>
+    <version>1.0-RELEASE</version>
+  </skin>
+
+  <custom>
+    <fluidoSkin>
+      <sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
+    </fluidoSkin>
+  </custom>
+
+</project>
